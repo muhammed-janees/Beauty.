@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty.</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/760d5637a3.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat&family=Roboto+Slab&family=Smokum&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand fs-3 me-5" href="#">BEAUTY.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item navigations ms-5">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ms-5 navigations">
+                            <a class="nav-link" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item ms-5 navigations">
+                            <a class="nav-link" href="#care">Skin care</a>
+                        </li>
+                        <li class="nav-item ms-5 navigations">
+                            <a class="nav-link" href="#info">Info</a>
+                        </li>
+                        <li class="nav-item ms-5 navigations">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- Button to open first modal -->
+                            <button class="btn border-dark btn-outline-success btn-sm" data-toggle="modal"
+                                data-target="#firstModal">
+                                Login/Register
+                            </button>
+
+                            <!-- First Modal -->
+                            <div class="modal fade" id="firstModal" tabindex="-1" role="dialog"
+                                aria-labelledby="firstModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="firstModalTitle">Login Form</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- First modal content -->
+                                            <form id="loginForm">
+                                                <div class="form-group">
+                                                    <label for="loginEmail">Email address</label>
+                                                    <input type="email" class="form-control" id="loginEmail"
+                                                        placeholder="Enter email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="loginPassword">Password</label>
+                                                    <input type="password" class="form-control" id="loginPassword"
+                                                        placeholder="Password">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mt-3">Login</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="" data-dismiss="modal" data-toggle="modal"
+                                                data-target="#secondModal">Register</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Modal -->
+                            <div class="modal fade" id="secondModal" tabindex="-1" role="dialog"
+                                aria-labelledby="secondModalTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="secondModalTitle">Register Form</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Second modal content -->
+                                            <form id="registerForm">
+                                                <div class="form-group">
+                                                    <label for="registerName">Full Name</label>
+                                                    <input type="text" class="form-control" id="registerName"
+                                                        placeholder="Enter full name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="registerEmail">Email address</label>
+                                                    <input type="email" class="form-control" id="registerEmail"
+                                                        placeholder="Enter email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="registerPassword">Password</label>
+                                                    <input type="password" class="form-control" id="registerPassword"
+                                                        placeholder="Password">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mt-3">Register</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="" data-dismiss="modal" data-toggle="modal"
+                                                data-target="#firstModal">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- headings -->
+        <div class="container-fluid topimage">
+            <img class="img-fluid banner" src="./images/banner1.jpg" alt="banner">
+            <div class="heading">
+                <p class="text-success fw-bold">Skin Care Product</p>
+                <h1 id="head_text" class="fs-1 fw-bold mt-2">Bringing Out The <br>Beauty In You</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dicta eius reprehenderit aliquid
+                    maiores ipsum iure.</p>
+                <button class="btn btn-success mt-2 ps-3 pe-3" style="border-radius: 20px;">Buy Now</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- about -->
+        <section id="home">
+            <div class="container mb-5">
+                <div class="containerss">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/aloe vera.jpg" alt="Image">
+                    </div>
+                    <div class="text-container">
+                        <p class="text-success fw-bold mt-5">Introducing</p>
+                        <h1>Beauty Service for You</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda deserunt dignissimos
+                            voluptatem distinctio quidem? Labore, deleniti inventore voluptatum, reiciendis hic at
+                            sapiente
+                            cumque dolores voluptates tenetur deserunt, facere a voluptate.</p>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <hr>
+                                <h1 class="text-success fw-bold text-center" style="-webkit-text-stroke: 0.1px #000000;">
+                                    97%
+                                </h1>
+                                <p class="fw-bold text-center">Elasticity <br> Increases</p>
+                            </div>
+                            <div class="col-4">
+                                <hr>
+                                <h1 class="text-success fw-bold text-center" style="-webkit-text-stroke: 0.1px #000000;">
+                                    85%
+                                </h1>
+                                <p class="fw-bold text-center">Moisture <br> Increases</p>
+                            </div>
+                            <div class="col-4">
+                                <hr>
+                                <h1 class="text-success fw-bold text-center" style="-webkit-text-stroke: 0.1px #000000;">
+                                    83%
+                                </h1>
+                                <p class="fw-bold text-center">Wrinkle <br> Decreases</p>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-outline-success mx-auto" style="border-radius: 20px;">Try it for
+                            Free</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps -->
+        <section id="care">
+            <div class="container steps text-center mt-5 pt-5">
+                <p class="text-success fw-bold">How Does it Work</p>
+                <h1>4 Steps for Your Skin Care</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus velit <br> impedit error
+                    corrupti cupiditate voluptas ratione</p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-3 text-center">
+                        <img style="border: 3px solid;" class="img-fluid" src="./images/wash.jpg" alt="wash">
+                        <h2 class="mt-3">WASH</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt Lorem ipsum
+                            adipisicing elit. </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-3 text-center">
+                        <img style="border: 3px solid;" class="img-fluid" src="./images/make.jpg" alt="make">
+                        <h2 class="mt-3">MAKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt Lorem ipsum
+                            adipisicing elit. </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-3 text-center">
+                        <img style="border: 3px solid;" class="img-fluid" src="./images/treat.jpg" alt="treat">
+                        <h2 class="mt-3">TREAT</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt Lorem ipsum
+                            adipisicing elit. </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-3 text-center">
+                        <img style="border: 3px solid;" class="img-fluid" src="./images/natural1.jpg" alt="ntural">
+                        <h2 class="mt-3">NATURAL</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt Lorem ipsum
+                            adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- prod-info -->
+        <section id="info">
+            <div class="container mt-3 pt-5 mb-5">
+                <p class="text-success fw-bold text-center">Ingredients</p>
+                <h1 class="text-center">Product Information</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque facere
+                    quaerat
+                    modi <br> incidunt Assumenda possimus totam officia tenetur aut ipsum.</p>
+                <div class="containersss">
+                    <div class="image-containers">
+                        <img class="img-fluid" src="./images/prod-info.png" alt="Image">
+                    </div>
+                    <div class="text-container">
+                        <div class="row mt-4 ingred">
+                            <p class="fw-bold nos">Essential oils</p>
+                            <p>Essential oils are basically plant extracts. It can take several pounds of a plant to
+                                produce
+                                a single bottle of essential oil.</p>
+                        </div>
+                        <div class="row mt-4 ingred">
+                            <p class="fw-bold nos">Sea whip extract</p>
+                            <p>Sea whip extract provides a substantial amount of skin benefits when formulated into
+                                cosmetic
+                                products.</p>
+                        </div>
+                        <div class="row mt-4 ingred">
+                            <p class="fw-bold nos">Green tea</p>
+                            <p>green tea is a versatile ingredient and safe for all skin types and is especially
+                                beneficial
+                                for those with oily, mature, or sensitive skin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- shop -->
+        <section id="shop">
+            <div class="container cont mt-4 mb-5">
+                <div class="container p-4">
+                    <p class="text-success fw-bold text-center pt-3">Order Now</p>
+                    <h1 class="text-center pb-3">Our Best Sellers</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="text-center">
+                                <div class="container"><img src="./images/exf.jpg" class="card-img-top hel"
+                                        style="border-radius: 10px;" alt="Image 1"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title mt-3">Intense brightening exfoliate</h5>
+                                    <p class="card-text price fw-bold pt-2">$149.99</p>
+                                    <button class="btn btn-success ps-3 pe-3 mb-3" style="border-radius: 20px;">Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="text-center">
+                                <div class="container"><img src="./images/mos.jpg" class="card-img-top hel"
+                                        style="border-radius: 10px;" alt="Image 2"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title mt-3">Clear cell matifying moisturiser</h5>
+                                    <p class="card-text price fw-bold pt-2">$200.00</p>
+                                    <button class="btn btn-success ps-3 pe-3 mb-3" style="border-radius: 20px;">Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class=" text-center">
+                                <div class="container"><img src="./images/mask.jpg" class="card-img-top hel"
+                                        style="border-radius: 10px;" alt="Image 3"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title mt-3">Medicated acne masque</h5>
+                                    <p class="card-text price fw-bold pt-2">$118.10</p>
+                                    <button class="btn btn-success ps-3 pe-3" style="border-radius: 20px;">Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <section id="contact">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-3 text-center">
+                        <a class="navbar-brand fs-3 fw-bold" href="#">Beauty.</a>
+                        <h4 class="text-success">(88) - 1234 45678</h4>
+                        <p>190 West Lookout Street <br>
+                            Lutherville Timonium, MD 21093</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-4 text-center">
+                        <h5 class="mb-3 fst-italic">Useful Links</h5>
+                        <p>
+                            <a style="text-decoration: none;" href="">About</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none;" href="">News</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none;" href="">Previews</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-4 p-4 text-center">
+                        <p>
+                            <a href=""></a>
+                        </p>
+                        <p>
+                            <a class="mt-5" style="text-decoration: none;" href="">Delivery and Payment</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none;" href="">Terms of use</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none;" href="">Contacts</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 mt-4 text-center">
+                        <h5 class="mb-4 fst-italic">Follow Us</h5>
+                        <p>
+                            <a class="p-3" href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                            <a class="p-3" href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a class="p-3" href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center pb-3">Copyright &copy; 2023 <span class="fw-bold">Beauty.</span> All Rights Reserved
+            </p>
+        </footer>
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>
